@@ -9,3 +9,8 @@
 .login-bg {
   background-color: #f7f7fc;
 }
+.social-button {
+  width: 69px;
+  height: 69px;
+  box-shadow: 0px 1px 10px 0px #0000000d;
+}

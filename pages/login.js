@@ -2,6 +2,12 @@ import React from "react";
 import loginSideImage from "../assets/images/login-side.jpeg";
 import Input from "../components/login/Input";
 import Label from "../components/login/Label";
+import SocialButton from "../components/login/SocialButton";
+
+import GoogleIcon from "../assets/icons/Google_icon.svg";
+import AppleIcon from "../assets/icons/Apple_icon.svg";
+import FBIcon from "../assets/icons/FB_icon.svg";
+import TwitterIcon from "../assets/icons/Twitter_icon.svg";
 
 const login = () => {
   return (
@@ -28,8 +34,8 @@ const login = () => {
           </div>
           <div className="my-8">
             <div className="flex">
-              <div className="relative text-label">
-                <div className="inline-block bg-blue-login w-9 h-5 rounded-full cursor-pointer"></div>
+              <div className="relative text-label cursor-pointer">
+                <div className="inline-block bg-blue-login w-9 h-5 rounded-full"></div>
                 <div className="inline-block bg-white w-4 h-4 rounded-full absolute right-0.5 top-0.5 "></div>
               </div>
               <div className="pl-4 text-label">Stay signed in</div>
@@ -39,7 +45,18 @@ const login = () => {
             LOG IN
           </button>
 
-          <div className="mb-72"></div>
+          <div className="flex my-12">
+            <div className="h-0.5 w-3/6 bg-black opacity-20 self-center"></div>
+            <div className="mx-2.5">OR</div>
+            <div className="h-0.5 w-3/6 bg-black opacity-20 self-center"></div>
+          </div>
+
+          <div className="flex justify-between cursor-pointer">
+            <SocialButton icon={GoogleIcon} />
+            <SocialButton icon={FBIcon} />
+            <SocialButton icon={TwitterIcon} />
+            <SocialButton icon={AppleIcon} />
+          </div>
         </div>
       </div>
     </div>
